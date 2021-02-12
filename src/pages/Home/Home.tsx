@@ -8,7 +8,7 @@ import '../../App.css'
 
 const Home = () => {
 
-  const [getToken, setGetToken] = React.useState<any>()
+  const [estado, setEstado] = React.useState<any>(false)  
 
   const email = useRef<HTMLInputElement>(null)
   const senha = useRef<HTMLInputElement>(null)
@@ -21,44 +21,41 @@ const Home = () => {
     }
 
     axios.post('http://localhost:4000/users', requisicao)
-      .then(resposta => localStorage.setItem("token", resposta.data.accessToken))
-
-    const token = localStorage.getItem("token")
-    setGetToken(token)
-  }
-
-  if(getToken){
-    return (
-      <>
-        {
-          getToken ?
-          <Redirect to="/produtos" />
-        :
-          null
+      .then((resposta) => {
+            localStorage.setItem("token", resposta.data.accessToken)
+            
+            if (resposta.status === 201) {
+              setEstado(true)
+            }
         }
-      </>
-    )
-    
-  } else{
-    return (
-      <div>
-        <Helmet>
-          <title>Home</title>
-        </Helmet>
-        
-        <label>E-mail:</label><br/>
-        <input type="email" placeholder='e-mail' ref={email} /> <br/>
+      )}
 
-        <label>Senha:</label><br/>
-        <input type="password" placeholder='senha' ref={senha} /><br/><br/>
+      return(
+        <div>
+          <Helmet>
+            <title>Home</title>
+          </Helmet>
+          
+          <label>E-mail:</label><br/>
+          <input type="email" placeholder='e-mail' ref={email} /> <br/>
       
-        <button onClick={cadastrar}>Cadastrar</button>
-        <hr/>
+          <label>Senha:</label><br/>
+          <input type="password" placeholder='senha' ref={senha} /><br/><br/>
+        
+          <button onClick={cadastrar}>Cadastrar</button>
+          <hr/>
 
-      </div>
-    )
-  }
-  
+          {
+            estado ?
+            <Redirect to="/produtos" />
+            :
+            null
+          }
+        </div> 
+      )    
 }
 
 export default Home;
+
+
+
