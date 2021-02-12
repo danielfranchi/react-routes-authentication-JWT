@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "email": "daniel@google.com",
+      "password": "$2a$10$EmglnZJm.BrpkOty3fyII.ga23/gzLe0gDxfSbry292hOBOaR9/3e",
+      "id": 1
+    },
+    {
+      "email": "fernanda@gmail.com",
+      "password": "$2a$10$Ikwejta4MkNaSjedVGVYteQ4qAxdFhOCSoBA1uuwlvTb33PmyafGG",
+      "id": 2
+    },
+    {
+      "email": "ana@gmail.com",
+      "password": "$2a$10$c8bwU8neruYd07puO1xe6OsV/M3UE4geVt.3MZaY2oBwTIHDF1Yey",
+      "id": 3
+    },
+    {
+      "email": "ana@outlook.com",
+      "password": "$2a$10$KJoJjDwWOGjc/Rx/O5BQe.PTtgC3qdteAJEYkaLG52UwsJ/X4T8Za",
+      "id": 4
+    },
+    {
+      "email": "fer@uol.com",
+      "password": "$2a$10$Yt5YZmlF08HZ581Nx4CTeuSyUl142yFwuuCAeV2JIRrmLbf3mH.h.",
+      "id": 5
+    },
+    {
+      "email": "aline@live.com",
+      "password": "$2a$10$B.5RKNdrbc1ltMtWUUDYCOnjhZsFunoK454htR2h4C1wbGaOMAmim",
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Notebook dell novinho",
+      "price": "R$ 2.999,00",
+      "description": "Melhor da linha inspiron 15",
+      "image": "https://i.zst.com.br/images/os-9-melhores-notebooks-dell-em-2019-photo775583635-44-26-10.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Samsung Book",
+      "price": "R$ 1.299,00",
+      "description": "Samsung Book 4BG Ram 1TB",
+      "image": "https://i.zst.com.br/images/notebook-samsung-book-e30-intel-core-i3-10110u-10-geracao-4gb-de-ram-hd-1-tb-15-6-full-hd-windows-10-np550xcj-kt-photo1129601879-12-30-17.jpg"
+    }
+  ]
+}
