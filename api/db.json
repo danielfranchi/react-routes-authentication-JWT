@@ -29,6 +29,16 @@
       "email": "aline@live.com",
       "password": "$2a$10$B.5RKNdrbc1ltMtWUUDYCOnjhZsFunoK454htR2h4C1wbGaOMAmim",
       "id": 6
+    },
+    {
+      "email": "bia@gmail.com",
+      "password": "$2a$10$vE6hQa0xhX.LhzECmQ.R/.SJjsTGeTgyTl/RGhaIkXKGxLbsz4xxK",
+      "id": 7
+    },
+    {
+      "email": "ana@uol.com",
+      "password": "$2a$10$VVN.KbAcURZgGJ1THFRxkeH8yZrPIeNoS0PoH7oY4ZqVXNX8WQjpu",
+      "id": 8
     }
   ],
   "products": [
